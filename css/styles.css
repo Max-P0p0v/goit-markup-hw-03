@@ -73,11 +73,16 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
-  /* margin-right: 76px; */
+  margin-right: 76px;
 }
 
 .page-logo2 {
   color: #2e2f42;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
 }
 
 .menu {
@@ -101,7 +106,7 @@ button {
   color: #404bbf;
 }
 
-.menu-address {
+.address-list {
   display: flex;
   gap: 40px;
 }
@@ -126,14 +131,13 @@ button {
 
 .main-section {
   background: #2e2f42;
+  padding: 188px 0;
 }
 
 .main-section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 .main-header {
@@ -143,7 +147,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
@@ -157,7 +161,8 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
   border-radius: 4px;
-  width: 169px;
+  border: none;
+  min-width: 169px;
   height: 56px;
 }
 
@@ -189,7 +194,12 @@ button {
   gap: 24px;
 }
 
+.advantages-list-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
 .advantages-list-header {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -233,7 +243,6 @@ button {
 .our-team-container-text {
   padding-top: 32px;
   padding-bottom: 32px;
-  border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -258,6 +267,7 @@ button {
 
 .our-team-item {
   background: #fff;
+  border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
 }
 
@@ -276,7 +286,8 @@ button {
 
 .portfolio-list {
   display: flex;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   flex-wrap: wrap;
   align-items: flex-start;
 }
@@ -286,8 +297,7 @@ button {
 }
 
 .portfolio-container-text {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -331,6 +341,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
   margin-bottom: 16px;
   color: #4d5ae5;
 }
