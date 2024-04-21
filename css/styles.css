@@ -173,9 +173,6 @@ button {
 
 /* ========== Advantages Page ========== */
 
-.advantages-container {
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -219,9 +216,6 @@ button {
 
 .our-team-page {
   background: #f4f4fd;
-}
-
-.our-team-container {
 }
 
 .our-team-title {
